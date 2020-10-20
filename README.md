@@ -1,2 +1,2 @@
 # LEO_A
-Genera una representación en formato PDF de las calificaciones en Moodle
+Genera una representación en formato PDF de las calificaciones
