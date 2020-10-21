@@ -3,7 +3,7 @@
 require_once '../../config.php';
  
 
-	$mysqli = new mysqli("localhost","emanvdos","emanvdospass","eman18v2"); 
+	$mysqli = new mysqli("localhost","dbuser","password","dbname"); 
 	
 	if(mysqli_connect_errno()){
 		echo 'Conexion Fallida : ', mysqli_connect_error();
