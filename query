@@ -1,7 +1,0 @@
-SELECT c.id AS Curso_ID, u.id AS profe_IDa, c.fullname AS CURSO, u.lastname AS nombre,  gm.name, gm.id AS IDGRUPO
-                FROM mdl_course c JOIN mdl_context ct ON c.id = ct.instanceid
-                INNER JOIN mdl_role_assignments ra ON ra.contextid = ct.id
-                INNER JOIN mdl_user u ON u.id = ra.userid
-                INNER JOIN mdl_role r ON r.id = ra.roleid
-                INNER JOIN mdl_groups_members AS grupm ON grupm.userid = u.id
-                RIGHT JOIN mdl_groups AS gm ON gm.id = grupm.groupid
